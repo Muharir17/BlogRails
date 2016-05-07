@@ -1,1 +1,24 @@
-<h1>Ini adalah halaman landing</h1>
+<div class="container">
+	<%= render partial: 'header' %>
+	<%= render partial: 'nav' %>
+
+
+	<div class="col-lg-9">
+		<% @articles.each do |article| %>
+			<div>
+				<h2><%= article.title %></h2>
+				<article>
+				<%= article.body %>
+				</article>
+				<hr>
+			</div>
+		<% end %>
+	</div>
+	
+	<div class="col-lg-3">
+		<%= render partial: 'side' %>
+	</div>
+
+	<%= render partial: 'footer' %>
+
+</div>
