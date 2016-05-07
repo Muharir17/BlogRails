@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root to: "landing#index"
   resources :articles
   resources :articles, path: 'adm/articles'
   # The priority is based upon order of creation: first created -> highest priority.

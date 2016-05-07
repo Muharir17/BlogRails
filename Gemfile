@@ -19,8 +19,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 
 # dua gem ini untuk windows
-  gem 'tzinfo-data'
-  gem 'tzinfo'
+  # gem 'tzinfo-data'
+  # gem 'tzinfo'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.4'
